@@ -1,0 +1,9 @@
+[project]
+name = "ebsco-open-day"
+version = "0.1.0"
+description = "Presentation for EBSCO Open Day in Melbourne, AUS"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "marimo>=0.19.7",
+]
