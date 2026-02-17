@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <title>EBSCO Open Day - AI + FOLIO Future of Library Platforms</title>
+    <script src="js/htmx.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>AI + FOLIO Future of Library Platforms</h1>
+    <h2>Jeremy Nelson<br>Stanford University Libraries</h2>
+    <div class="grid">
+     <div> 
+      <ul>
+        <li hx-get="topics/ai-impacts.html" 
+            hx-target="#article">AI Impacts All Levels of the Library</li> 
+        <li hx-get="topics/external-internal-agents.html" 
+            hx-target="#article">External &amp; Internal AI Agents</li>
+        <li hx-get="topics/progressive-ai-assistance.html" 
+            hx-target="#article">Progressive AI Assistance</li>
+        <li hx-get="topics/automate-the-easy.html" 
+            hx-target="#article">Automate the Easy</li>
+        <li hx-get="topics/looping-us-in-for-the-hard.html" 
+            hx-target="#article">Looping Us in for the Hard</li>
+        <li hx-get="topics/blurring-of-systems.html"
+            hx-target="#article">Blurring of Systems</li>
+        <li hx-get="topics/short-history-edge-ai.html"
+            hx-target="#article">A Short History of Edge AI</li>
+        <li hx-get="topics/mcp-edge-ai.html"
+            hx-target="#article">MCP for Edge AI</li>
+      </ul>
+     </div>
+     <div>
+        <article id="article">
+          <header>
+            <h1>Welcome!</h1>
+          </header>
+          <footer>
+          <span hx-get="topics/ai-impacts.html" 
+                hx-target="#article"
+                class="nav-button">&#9193;</span>
+          </footer>
+        </article>
+     </div>
+    </div>
+  </main>
+</body>
+</html>
+

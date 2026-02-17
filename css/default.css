@@ -1,0 +1,7 @@
+.grid {
+  grid-template-columns: 1fr 2fr;
+}
+
+.nav-button {
+  font-size: 3em;
+}
