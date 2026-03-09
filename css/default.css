@@ -5,3 +5,18 @@
 .nav-button {
   font-size: 3em;
 }
+
+li[hx-get],
+span[hx-get] {
+  cursor: pointer;
+}
+
+span[hx-get].active {
+  opacity: 0.5;
+}
+
+li[hx-get].active {
+  font-weight: bold;
+  color: var(--pico-primary);
+  list-style-type: "→ ";
+}

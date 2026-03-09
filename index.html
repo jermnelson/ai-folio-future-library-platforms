@@ -59,6 +59,25 @@
      </div>
     </div>
   </main>
+  <script>
+    document.body.addEventListener('htmx:beforeRequest', e => {
+      const target = e.target;
+      document.querySelectorAll('li[hx-get]').forEach(el => el.classList.remove('active'));
+      if (target.matches('li[hx-get]')) {
+        target.classList.add('active');
+      } else if (target.matches('span[hx-get]')) {
+        target.classList.add('active');
+        const url = target.getAttribute('hx-get');
+        const matchingLi = document.querySelector(`li[hx-get="${url}"]`);
+        if (matchingLi) matchingLi.classList.add('active');
+      }
+    });
+    document.body.addEventListener('htmx:afterRequest', e => {
+      if (e.target.matches('span[hx-get]')) {
+        e.target.classList.remove('active');
+      }
+    });
+  </script>
 </body>
 </html>
 
