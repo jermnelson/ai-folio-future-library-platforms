@@ -20,3 +20,11 @@ li[hx-get].active {
   color: var(--pico-primary);
   list-style-type: "→ ";
 }
+
+div.question {
+  background-color: rgb(30,98,120);
+  border: 2px solid rgb(35,73,167);
+  border-radius: 15px;
+  color: rgb(244,151,20);
+  padding: .5em;
+}

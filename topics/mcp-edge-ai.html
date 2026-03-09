@@ -1,6 +1,22 @@
 <header>
   <h1>MCP for Edge AI</h1>
 </header>
+<section>
+ <h2>Interface for Models &amp; AI Agents</h2>
+ <p>
+  In the current implementation of the FOLIO 
+  <a href="https://github.com/folio-labs/edge-ai">edge-ai</a> module,
+  the API endpoints are also available for use by LLMs and AI Agents 
+  by supporting MCP. 
+ </p>
+ <p>
+  A model or agent environment like Antropic's <a href="https://claude.com/product/claude-code">Claude Code</a> 
+  or OpenAI's <a href="https://chatgpt.com/codex">Codex</a> can, using the MCP, interact with 
+  an internal Inventory agent to create a FOLIO Inventory Instance
+  with either a text prompt or by uploading a cover image. 
+ </p>
+ <img src="img/claude-edge-ai-mcp.png" alt="Claude Code Connecting to Edge AI MCP">
+</section>
 <footer>
   <span hx-get="topics/short-history-edge-ai.html"
         hx-target="#article"
