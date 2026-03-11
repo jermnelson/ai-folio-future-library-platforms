@@ -11,6 +11,9 @@
 </head>
 <body>
   <main class="container">
+    <div class="header-logos">
+       EBSCO Open Day 2026 | State Library of Victoria, Melbourne
+         </div>  
     <h1>AI + FOLIO Future of Library Platforms</h1>
     <h2>Jeremy Nelson<br>Stanford University Libraries</h2>
     <div class="grid">
@@ -50,6 +53,15 @@
           <header>
             <h1>Welcome!</h1>
           </header>
+          <section>
+            <h2>Who am I?</h2>
+            <p>
+              My name is Jeremy Nelson and I have been a software developer at 
+              <a href="https://library.stanford.edu/">Stanford University Libraries</a>
+              for past eight years. Prior to Stanford, I worked as a Metadata/Systems Librarian
+              and other roles in multiple academic libraries.
+            </p>
+          </section>
           <footer>
           <span hx-get="topics/ai-impacts.html" 
                 hx-target="#article"
@@ -59,6 +71,12 @@
      </div>
     </div>
   </main>
+  <footer class="container">
+     &copy; 2026 Jeremy Nelson, all content licensed under <a href="https://creativecommons.org/public-domain/cc0/">CCO</a>
+     <a href="https://library.stanford.edu/">
+       <img src="img/stanford.png" alt="" style="float: right;padding: 0px">
+     </a>
+  </footer>
   <script>
     document.body.addEventListener('htmx:beforeRequest', e => {
       const target = e.target;

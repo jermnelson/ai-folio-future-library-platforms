@@ -21,6 +21,15 @@ li[hx-get].active {
   list-style-type: "→ ";
 }
 
+div.header-logos {
+  background-color: rgb(12,34,68);
+  border-radius: 15px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.25em;
+  padding: .5em;
+}
+
 div.question {
   background-color: rgb(30,98,120);
   border: 2px solid rgb(35,73,167);
