@@ -11,19 +11,76 @@
      <cite>What is an AI agent?</cite> From 
      <a href="https://cloud.google.com/discover/what-are-ai-agents">Google Cloud</a>
   </p>
+  <table>
+    <thead>
+      <tr>
+       <th>Dimension</th>
+       <th>External AI Agents</th>
+       <th>Internal AI Agents</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ownership</td>
+        <td>Vendor/third party/open source</td>
+        <td>Library/consortium</td>
+      </tr>
+      <tr>
+        <td>Primary goal</td>
+        <td>General productivity / coding / research</td>
+        <td>Library-specific services (discovery, metadata, reference, operations)</td>
+      </tr>
+      <tr>
+        <td>Data use</td>
+        <td>Pulls from public web + library resources</td>
+        <td>Prioritizes licensed/local collections + policies</td>
+      </tr>
+      <tr>
+        <td>Control &amp; policy</td>
+        <td>Limited control</td>
+        <td>High control (guardrails, logging, retention)</td>
+      </tr>
+      <tr>
+        <td>Risk profile</td><td>Higher (privacy, licensing, provenance)</td>
+        <td>Lower if governed well, but requires staffing</td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 <section>
   <h3>External AI Agents</h3>
+  <p>
+    General AI agents that, while not specific to libraries, use existing libraries services
+    and resources to complete tasks.
+  </p>
   <a href="https://openclaw.ai/"><img src="img/openclaw-website.png" alt="OpenClaw Website"></a>
   <ul>
-    <li><strong><a href="https://openclaw.ai/">Openclaw</a></strong></li> 
-    <li><strong><a href="https://claude.com/product/claude-code">Claude Code</a></strong> </li> 
-    <li><strong><a href="https://chatgpt.com/codex">Codex</a></strong> </li>
+    <li><strong>Coding/Software development agents</strong> - (<a href="https://claude.com/product/claude-code">Claude Code</a>,
+     <a href="https://chatgpt.com/codex">Codex</a>) assist staff in integrating APIs and automating workflows</li>
+    <li>
+      <strong>Workflow agents</strong> - (<a href="https://openclaw.ai/">Openclaw</a>) Integrate and automate disparate workflows. 
+      Not for the weak of heart!
+    </li> 
+    <li><strong>Research Agents</strong> - (<a href="https://www.perplexity.ai/">Perplexity</a>, <a href="https://notebooklm.google/">NotebookLM</a>)
+      research 
+   </li> 
   </ul>
 </section>
 <section>
   <h3>Internal AI Agents</h3>
-
+  <p>
+    The development and deployment of library specific AI has tended to be on the 
+    <a href="https://about.ebsco.com/artificial-intelligence/products/ai-insights">discovery</a> 
+    and <a href="https://knowledge.exlibrisgroup.com/Alma/Product_Documentation/010Alma_Online_Help_(English)/Metadata_Management/005Introduction_to_Metadata_Management/The_AI_Metadata_Assistant_in_the_Metadata_Editor">metadata</a>, 
+    <a href="https://www.librechat.ai/">reference chatbot</a> as enhancements to existing commercial or open-source platforms.  
+  </p>
+  <p>
+   Other areas with ongoing research efforts 
+  </p>
+  <ul>
+   <li><strong>Collections &amp; acquisitions</strong> analyze usage/costs, summarizing contracts</li>
+   <li><strong>Digital scholarship</strong> audio/video transcription, OCR corrections</li>
+   <li><strong>Operations</strong> policy assistance, news and event communication</li>  
+  </ul>
 </section>
 <footer>
   <span hx-get="topics/ai-impacts.html"

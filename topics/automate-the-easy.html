@@ -2,15 +2,86 @@
   <h1>Automate the Easy</h1>
 </header>
 <section>
-  <h2>Identification of Tasks</h2>
-  <p>
-   What tasks in library workflows are repetitive with low cognitive
-   requirements?
-  </p>
-  <p>
-   What are the risks if the task isn't performed correctly? When mistakes
-   occur, how easy is it fix? Are the fixes predictable?
-  </p>
+
+<table style="border-collapse:collapse; width:100%; font-family:Arial, sans-serif; table-layout:fixed;">
+  <tr>
+    <th style="border:0; width:18%;"></th>
+    <th colspan="2" style="border:1px solid #333; padding:10px; text-align:center; background:#f2f2f2;">
+      Repetitiveness / Volume &rarr; (Low &rarr; High)
+    </th>
+  </tr>
+  <tr>
+    <th style="border:1px solid #333; padding:10px; text-align:center; background:#f2f2f2;">
+      Impact of error &darr; (Low &darr; High)
+    </th>
+    <th style="border:1px solid #333; padding:10px; text-align:center; background:#fafafa;">
+      Low volume
+    </th>
+    <th style="border:1px solid #333; padding:10px; text-align:center; background:#fafafa;">
+      High volume
+    </th>
+  </tr>
+
+  <tr>
+    <th style="border:1px solid #333; padding:12px; text-align:center; background:#fafafa;">
+      Low impact
+    </th>
+    <td style="border:1px solid #333; padding:12px; vertical-align:top;">
+      <strong>Optional / Nice-to-have</strong>
+      <ul style="margin:8px 0 0 18px;">
+        <li>Automate if convenient</li>
+        <li>Low payoff</li>
+      </ul>
+    </td>
+    <td style="border:1px solid #333; padding:12px; vertical-align:top; background:#e8f5e9;">
+      <strong>Automate first</strong>
+      <ul style="margin:8px 0 0 18px;">
+        <li>Rules-based</li>
+        <li>Clear rollback</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <th style="border:1px solid #333; padding:12px; text-align:center; background:#fafafa;">
+      High impact
+    </th>
+    <td style="border:1px solid #333; padding:12px; vertical-align:top; background:#fff3e0;">
+      <strong>Keep manual / Expert-led</strong>
+      <ul style="margin:8px 0 0 18px;">
+        <li>Rare but consequential</li>
+        <li>Requires judgment</li>
+      </ul>
+    </td>
+    <td style="border:1px solid #333; padding:12px; vertical-align:top; background:#e3f2fd;">
+      <strong>Automate with guardrails + QA</strong>
+      <ul style="margin:8px 0 0 18px;">
+        <li>Validation + sampling</li>
+        <li>Audit logs</li>
+        <li>Escalate edge cases</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+</section>
+<section>
+  <h2>"Easy" Candidates</h2>
+  <ul>
+    <li>Deduping Inventory Records on ISBN,DOI or other fields</li>
+    <li>Adding/Correcting Call Numbers</li>
+    <li>Holds, Overdue, and other Routine Notices</li>
+    <li>E-resource Troubleshooting</li>
+  </ul> 
+</section>
+<section>
+  <h2>Checklist for Tasks</h2>
+  <ul>
+    <li><input type="checkbox"></input><strong>Reversible?</strong> Can we roll back changes easily?</li>
+    <li><input type="checkbox"></input><strong>Detectable?</strong> Will errors be obvious (validation rules, reports)?</li>
+    <li><input type="checkbox"></input><strong>Contained?</strong> Does the task affect a single record vs many systems/patrons?</li>
+    <li><input type="checkbox"></input><strong>Permissions?</strong> Does the task touch restricted data (patron info, licensed content)?</li>
+    <li><input type="checkbox"></input><strong>Audit?</strong> Are there logs that provide "who/what changed" visibility?</li>
+  </ul>
 </section>
 <footer>
   <span hx-get="topics/progressive-ai-assistance.html"
