@@ -4,7 +4,16 @@
 <section>
   <h2>Circulation and Inventory Reports</h2>
   <p>
-    Use Claude Code, Gemini CLI, or Open AI Codex Agents and Skills
+    Use Claude Code, Gemini CLI, or Open AI Codex Agents and <a href="https://agentskills.io/">Skills</a> to run 
+    reports for a FOLIO instance. To help jumpstart the use of these agents, the following Github repository 
+    contains helper scripts and instructions: 
+  </p>
+  <p style="font-size: 1.2em">
+   <a href="https://github.com/folio-labs/ai-reporting-plugin">https://github.com/folio-labs/ai-reporting-plugin</a>
+  </p>
+  <p>
+    We will be using the current FOLIO Sunflower demo environment:<br>
+    <a href="https://folio-sunflower.dev.folio.org/">https://folio-sunflower.dev.folio.org/</a>
   </p>
 </section>
 <section>
@@ -16,6 +25,23 @@
     <li>Download and install Gemini CLI: <code>npm install -g @google/gemini-cli</code></li>
     <li>Download and install Open AI Codex CLI: <code>npm i -g @openai/codex</code></li>
   </ul>
+</section>
+<section>
+  <h2>Demo One: Claude Code Agent</h2>
+  <ol>
+    <li>Please look in skills/ directory for skills to use</li>
+    <li>Please create an invoice report</li>
+  </ol>
+</section>
+<section>
+  <h2>Demo Two: Claude Code Multi-Agent Team</h2>
+  <ol>
+    <li>Create an agent team described in the `agents/` directory.</li>
+    <li>The reporter agent should create a checkout report and the verifier agent 
+        should verify the report</li>
+  </ol>
+</section>
+<section>
 </section>
 <footer>
   <span hx-get="topics/acquisition-agent.html"
